@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
 body {
-    /* font-family: sans-serif; */
+    font-family: Helvetica Neue;
     background-color: #ffffff;
     color: #333333;
 }
@@ -21,7 +21,7 @@ nav {
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: #034fa5 ;
+    background-color: #034fa5;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -39,8 +39,8 @@ nav {
 
 
 .navbar a:hover {
-    color: #FFD600 ;
-    
+    color: #FFD600;
+
 }
 
 .nav-title span {
@@ -60,12 +60,16 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
     margin: 20px;
 
 }
 
-.hero img{
+.hero span {
+    font-size: 70px;
+}
+
+.hero img {
     margin: 30px;
     height: 400px;
     width: 600px;
@@ -74,7 +78,7 @@ nav {
     box-shadow: 1px 1px 20px #000000;
 }
 
-.hero p{
+.hero p {
     font-size: 35px;
     margin: 20px;
     width: 50%;
@@ -108,6 +112,7 @@ nav {
     justify-content: center;
     padding: 20px;
     margin-bottom: 20px;
+    width: 100%;
     background-color: #f4f4f4;
 }
 
@@ -220,7 +225,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #034fa5 ;
+    background-color: #034fa5;
     color: white;
     font-size: 17px;
     height: 50px;
@@ -229,27 +234,46 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    .heritage-sites {
-        flex-direction: column;
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-title {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero {
+        display: block;
+        justify-content: center;
         align-items: center;
     }
 
-    .site-card {
-        width: 90%;
+    .hero p {
+        font-size: 35px;
+        margin: 20px;
+        width: 100%;
     }
 
-    .heritage-sites {
-        display: block;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 80px 20px;
-        gap: 20px;
+    .hero img {
+        height: 300px;
+        width: 300px;
     }
 
     .navbar a {
-        color: white;
-        text-decoration: none;
-        margin: 15px;
-        font-size: 10px;
+        font-size: 18px;
     }
+
+    footer {
+        width: 100%;
+    }
+
 }
