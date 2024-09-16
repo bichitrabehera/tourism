@@ -246,8 +246,9 @@ footer {
 
     .navbar {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        
         width: 100%;
     }
 
@@ -269,7 +270,7 @@ footer {
     }
 
     .navbar a {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     footer {
